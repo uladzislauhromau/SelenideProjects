@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="demoqa.tests.PracticeFormTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-06T09:19:44" hostname="DESKTOP-D3OMRBJ" time="12.777">
+<testsuite name="demoqa.tests.PracticeFormTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-06T10:47:17" hostname="DESKTOP-D3OMRBJ" time="15.226">
   <properties/>
-  <testcase name="practiceFormTest()" classname="demoqa.tests.PracticeFormTest" time="12.777"/>
+  <testcase name="practiceFormTest()" classname="demoqa.tests.PracticeFormTest" time="15.226"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-апр. 06, 2024 12:19:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+апр. 06, 2024 1:47:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 123
-апр. 06, 2024 12:19:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+апр. 06, 2024 1:47:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 123.0.6312.106. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

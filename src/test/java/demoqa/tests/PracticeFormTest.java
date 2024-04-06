@@ -1,21 +1,8 @@
 package demoqa.tests;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-
-public class PracticeFormTest
+public class PracticeFormTest extends TestBase
 {
-
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
-        Configuration.browserSize = "1920x1080";
-    }
 
     @Test
     void practiceFormTest () {
@@ -35,44 +22,31 @@ public class PracticeFormTest
         String state = "NCR";
         String city = "Noida";
 
-        open("https://demoqa.com/automation-practice-form");
-        executeJavaScript("$('#fixedban').remove()");
-        executeJavaScript("$('footer').remove()");
+        registrationPage.openPage()
+                        .setFirstName(firstName)
+                        .setLastName(lastName)
+                        .setGender(gender)
+                        .setEmail(email)
+                        .setNumber(number)
+                        .setBirthDate(month, year, day)
+                        .setSubject(subject)
+                        .setHobbies(hobbies)
+                        .uploadPicture(pictureName)
+                        .setAddress(address)
+                        .setState(state)
+                        .setCity(city)
+                        .submitForm();
 
-        $(".practice-form-wrapper").shouldHave(text("Practice Form"));
-
-        $("#firstName").setValue(firstName);
-        $("#lastName").setValue(lastName);
-        $("#userEmail").setValue(email);
-
-
-        $("#genterWrapper").$(byText(gender)).click();
-        $("#userNumber").setValue(number);
-
-        $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").selectOption(month);
-        $(".react-datepicker__year-select").selectOption(year);
-        $(".react-datepicker__day.react-datepicker__day--0" + day + " ").click();
-
-
-        $("#subjectsInput").setValue(subject).pressEnter();
-
-        $("#hobbiesWrapper").$(byText(hobbies)).click();
-
-        $("#uploadPicture").uploadFromClasspath(pictureName);
-
-        $("#currentAddress").setValue(address);
-
-        $("#state").click();
-        $(byText(state)).click();
-
-        $("#city").click();
-        $(byText(city)).click();
-
-        $("#submit").click();
-
-        $(".modal-content").should(appear);
-        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        registrationPage.verifyResultsModalAppears()
+                .verifyResults("Student Name", firstName + " " + lastName)
+                .verifyResults("Student Email", email)
+                .verifyResults("Gender", gender)
+                .verifyResults("Mobile", number)
+                .verifyResults("Date of Birth", day + " " + month + "," + year)
+                .verifyResults("Subjects", subject)
+                .verifyResults("Hobbies", hobbies)
+                .verifyResults("Picture", pictureName)
+                .verifyResults("Address", address)
+                .verifyResults("State and City", state + " " + city);
     }
-
 }
