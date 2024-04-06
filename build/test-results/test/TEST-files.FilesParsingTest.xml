@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="files.FilesParsingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-06T13:20:51" hostname="DESKTOP-D3OMRBJ" time="1.996">
+  <properties/>
+  <testcase name="Чтение файлов из архива" classname="files.FilesParsingTest" time="1.996"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
