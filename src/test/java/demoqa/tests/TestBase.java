@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
+    TestData testData = new TestData();
     @BeforeAll
     static void beforeAll() {
         Configuration.holdBrowserOpen = true;
