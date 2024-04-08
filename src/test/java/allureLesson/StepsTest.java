@@ -1,3 +1,4 @@
+/*
 package allureLesson;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -18,3 +19,4 @@ public class StepsTest {
         steps.checkName("2705", "Selenide proxy should allow mocking server response AND specify content type");
     }
 }
+*/

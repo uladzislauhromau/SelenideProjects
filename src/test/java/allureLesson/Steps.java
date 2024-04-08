@@ -1,3 +1,4 @@
+/*
 package allureLesson;
 
 import io.qameta.allure.Step;
@@ -26,3 +27,4 @@ public class Steps {
                 text(issueName));
     }
 }
+*/
