@@ -15,7 +15,6 @@ public class LambdaTest {
     @Test
     void checkNameLambda () {
         SelenideLogger.addListener("allure", new AllureSelenide());
-
         step("Открыть страницу с задачами", () -> {
             open("https://github.com/selenide/selenide/issues");
         });

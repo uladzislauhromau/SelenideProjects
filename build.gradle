@@ -16,22 +16,22 @@ dependencies {
             'com.codeborne:xls-test:1.4.3',
             'com.opencsv:opencsv:5.7.1',
             'com.github.javafaker:javafaker:1.0.2',
-            'io.qameta.allure:allure-selenide:2.20.1',
+            'io.qameta.allure:allure-selenide:2.27.0',
             "org.slf4j:slf4j-simple:2.0.6"
     )
 }
 
 allure {
-    version.set("2.20.1")
+    version.set("2.27.0")
     adapter {
-        allureJavaVersion.set("2.20.1")
+        allureJavaVersion.set("2.27.0")
         aspectjVersion.set("1.9.5")
         aspectjWeaver.set(true)
 
         frameworks {
             junit5 {
                 // Defaults to allureJavaVersion
-                adapterVersion.set("2.20.1")
+                adapterVersion.set("2.27.0")
                 enabled.set(true)
             }
         }
