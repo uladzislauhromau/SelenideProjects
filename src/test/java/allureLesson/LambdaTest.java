@@ -11,8 +11,9 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.step;
 
 public class LambdaTest {
-    @DisplayName("Проверка через Lambda")
+
     @Test
+    @DisplayName("Проверка через Lambda")
     void checkNameLambda () {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Открыть страницу с задачами", () -> {
