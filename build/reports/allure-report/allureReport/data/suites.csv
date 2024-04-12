@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Apr 08 12:34:15 MSK 2024","Mon Apr 08 12:34:28 MSK 2024","13248","","allureLesson.SelenideTest","","allureLesson.SelenideTest","checkName","Чистый Selenide",""
-"passed","Mon Apr 08 13:19:39 MSK 2024","Mon Apr 08 13:19:50 MSK 2024","11228","","allureLesson.LambdaTest","","allureLesson.LambdaTest","checkNameLambda","Проверка через Lambda",""
-"broken","Mon Apr 08 13:12:05 MSK 2024","Mon Apr 08 13:12:05 MSK 2024","546","","allureLesson.StepsTest","","allureLesson.StepsTest","checkName","Проверка имени задачи через Steps",""

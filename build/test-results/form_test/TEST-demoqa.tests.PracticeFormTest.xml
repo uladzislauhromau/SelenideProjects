@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="demoqa.tests.PracticeFormTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-11T13:04:54" hostname="DESKTOP-D3OMRBJ" time="32.237">
+<testsuite name="demoqa.tests.PracticeFormTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-12T11:21:13" hostname="DESKTOP-D3OMRBJ" time="27.217">
   <properties/>
-  <testcase name="practiceFormTest()" classname="demoqa.tests.PracticeFormTest" time="32.237"/>
+  <testcase name="practiceFormTest()" classname="demoqa.tests.PracticeFormTest" time="27.217"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=100.0.4896.60 Platform=linux
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=120.0.6099.129 Platform=linux
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.19.1
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.13.0 build revision: ba948ece5b*
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on linux (a69b5f3a9746d3de8b6c56d9ea4bf73f)
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=RemoteWebDriver: chrome on linux (a69b5f3a9746d3de8b6c56d9ea4bf73f),proxy=null,downloadsFolder=null] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on linux (1ed89a4a1ff272f1b4367e7f48b83738)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=RemoteWebDriver: chrome on linux (1ed89a4a1ff272f1b4367e7f48b83738),proxy=null,downloadsFolder=null] in 1 [size=1]
 [Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
-[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Browser will stay open due to holdBrowserOpen=true: 1 -> RemoteWebDriver: chrome on linux (a69b5f3a9746d3de8b6c56d9ea4bf73f)
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Browser will stay open due to holdBrowserOpen=true: 1 -> RemoteWebDriver: chrome on linux (1ed89a4a1ff272f1b4367e7f48b83738)
 ]]></system-err>
 </testsuite>
