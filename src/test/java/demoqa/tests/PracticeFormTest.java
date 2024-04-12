@@ -1,5 +1,6 @@
 package demoqa.tests;
 
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
@@ -45,6 +46,7 @@ public class PracticeFormTest extends TestBase
                     .verifyResults("Address", testData.address)
                     .verifyResults("State and City", testData.state + " " + testData.city);
         });
+
 
 
     }
